@@ -1,5 +1,114 @@
-/* Orijinal kodlar zaten burada tanımlı */
+.iletisim {
+  padding: 60px 40px;
+  background-color: #f5f2ed;
+  text-align: center;
+}
 
+.iletisim h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #5a4a3f;
+}
+
+.iletisim-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* Flip Card */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  background-color: #fff;
+}
+
+.flip-card-front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #5a4a3f;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #5a4a3f;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Form */
+.iletisim-formu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 400px;
+  max-width: 100%;
+}
+
+.iletisim-formu input,
+.iletisim-formu textarea {
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #fff;
+  font-family: inherit;
+}
+
+.iletisim-formu textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.iletisim-formu button {
+  padding: 12px;
+  background-color: #c29876;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.iletisim-formu button:hover {
+  background-color: #a87b58;
+}
+
+/* Responsive */
 @media (max-width: 992px) {
   .iletisim-container {
     flex-direction: column;
@@ -8,7 +117,6 @@
   }
 
   .iletisim-formu {
-    flex: 1 1 100%;
     width: 100%;
     max-width: 600px;
   }
@@ -20,16 +128,6 @@
 
   .iletisim h2 {
     font-size: 28px;
-  }
-
-  .iletisim-formu input,
-  .iletisim-formu textarea {
-    font-size: 15px;
-  }
-
-  .iletisim-formu button {
-    width: 100%;
-    text-align: center;
   }
 }
 
@@ -49,7 +147,7 @@
 
   .flip-card-front,
   .flip-card-back {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 15px;
   }
 

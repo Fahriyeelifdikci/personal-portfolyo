@@ -18,6 +18,20 @@ function Iletisim() {
     <section className="iletisim" id="iletisim">
       <h2>İletişim</h2>
       <div className="iletisim-container">
+        {/* Sol: Flip Card */}
+        <div className="flip-card">
+          <div className="flip-card-inner">
+            <div className="flip-card-front">
+              <h3>İletişim Bilgilerim</h3>
+            </div>
+            <div className="flip-card-back">
+              <p><strong>E-posta:</strong> elifdikci52@gmail.com</p>
+              <p><strong>Telefon:</strong> +90 543 946 35 27</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Sağ: Form */}
         <form onSubmit={handleSubmit} className="iletisim-formu">
           <input
             type="text"
@@ -44,24 +58,12 @@ function Iletisim() {
           />
           <button type="submit">Gönder</button>
         </form>
-
-        {/* Flip Kart Başlangıcı */}
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <h3>İletişim Bilgilerim</h3>
-            </div>
-            <div className="flip-card-back">
-              <p><strong>E-posta:</strong> elifdikci52@gmail.com</p>
-              <p><strong>Cep Telefonu:</strong> +90 543 946 35 27</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
 }
 
 export default Iletisim;
+
 
 
