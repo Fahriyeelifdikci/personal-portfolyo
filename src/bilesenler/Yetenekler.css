@@ -38,7 +38,6 @@
   color: #c2855c;
 }
 
-/* Responsive ayarlar */
 @media (max-width: 992px) {
   .yetenekler-baslik {
     font-size: 2rem;
@@ -64,7 +63,7 @@
     margin-bottom: 25px;
   }
   .yetenekler-kutular {
-    grid-template-columns: 1fr; /* Tek sütun yap */
+    grid-template-columns: 1fr;
     gap: 20px;
   }
   .yetenekler-kutu {
