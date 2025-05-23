@@ -31,7 +31,6 @@ function Iletisim() {
           </div>
         </div>
 
-        {/* Sağ: Form */}
         <form onSubmit={handleSubmit} className="iletisim-formu">
           <input
             type="text"
