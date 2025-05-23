@@ -1,0 +1,101 @@
+.benkimim {
+  padding: 80px 20px;
+  background-color: #f9f5f0;
+  text-align: center;
+}
+
+.benkimim-baslik {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #8b7e6a;
+  font-weight: bold;
+}
+
+.benkimim-kutular {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.benkimim-kutu {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.benkimim-kutu:hover {
+  transform: translateY(-8px);
+}
+
+.benkimim-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #c2855c;
+}
+
+.benkimim-kutu h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.benkimim-kutu p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive Ayarlar */
+@media (max-width: 992px) {
+  .benkimim-baslik {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  .benkimim-kutular {
+    gap: 25px;
+  }
+  .benkimim-kutu {
+    padding: 20px;
+  }
+  .benkimim-icon {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .benkimim {
+    padding: 60px 15px;
+  }
+  .benkimim-baslik {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+  }
+  .benkimim-kutular {
+    grid-template-columns: 1fr; /* Tek sütun */
+    gap: 20px;
+  }
+  .benkimim-kutu {
+    padding: 18px;
+  }
+  .benkimim-icon {
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+  .benkimim-kutu h3 {
+    font-size: 1.2rem;
+  }
+  .benkimim-kutu p {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+.yetenekler {
+  padding: 80px 20px;
+  background-color: #fefcf9;
+  text-align: center;
+}
+
+.yetenekler-baslik {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #8b7e6a;
+  font-weight: bold;
+}
+
+.yetenekler-kutular {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.yetenekler-kutu {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.yetenekler-kutu:hover {
+  transform: translateY(-8px);
+}
+
+.yetenekler-icon {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  color: #c2855c;
+}
+
+/* Responsive ayarlar */
+@media (max-width: 992px) {
+  .yetenekler-baslik {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  .yetenekler-kutular {
+    gap: 25px;
+  }
+  .yetenekler-kutu {
+    padding: 20px;
+  }
+  .yetenekler-icon {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .yetenekler {
+    padding: 60px 15px;
+  }
+  .yetenekler-baslik {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+  }
+  .yetenekler-kutular {
+    grid-template-columns: 1fr; /* Tek sütun yap */
+    gap: 20px;
+  }
+  .yetenekler-kutu {
+    padding: 18px;
+  }
+  .yetenekler-icon {
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+}
+
+
+

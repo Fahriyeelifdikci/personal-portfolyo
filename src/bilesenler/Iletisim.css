@@ -1,0 +1,69 @@
+/* Orijinal kodlar zaten burada tanımlı */
+
+@media (max-width: 992px) {
+  .iletisim-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .iletisim-formu {
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .flip-card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .iletisim h2 {
+    font-size: 28px;
+  }
+
+  .iletisim-formu input,
+  .iletisim-formu textarea {
+    font-size: 15px;
+  }
+
+  .iletisim-formu button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .iletisim {
+    padding: 30px 15px;
+  }
+
+  .iletisim h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .flip-card {
+    height: 200px;
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+
+  .iletisim-formu input,
+  .iletisim-formu textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .iletisim-formu button {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+
+

@@ -1,0 +1,129 @@
+.projelerim {
+  padding: 50px 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.projelerim h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #6e5841;
+}
+
+.proje-kartlari {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.proje-karti {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 300px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.proje-karti:hover {
+  transform: translateY(-5px);
+}
+
+.proje-karti img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Sadece Tarım Robotu görseli için boyut ayarı */
+.kucuk-resim {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 10px;
+  border-radius: 8px;
+}
+
+.proje-icerik {
+  margin-top: 15px;
+}
+
+.proje-icerik h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.proje-icerik p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.proje-icerik a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #c29876;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.proje-icerik a:hover {
+  background-color: #a67c59;
+}
+
+/* Responsive ayarlar */
+@media (max-width: 992px) {
+  .projelerim h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+  .proje-karti {
+    width: 45%; /* İki sütun yapar */
+    padding: 15px;
+  }
+  .proje-icerik h3 {
+    font-size: 18px;
+  }
+  .proje-icerik p {
+    font-size: 14px;
+  }
+  .proje-icerik a {
+    padding: 7px 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .projelerim {
+    padding: 40px 15px;
+  }
+  .projelerim h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .proje-kartlari {
+    gap: 20px;
+  }
+  .proje-karti {
+    width: 100%; /* Tek sütun yapar */
+    padding: 15px;
+  }
+  .proje-icerik h3 {
+    font-size: 17px;
+  }
+  .proje-icerik p {
+    font-size: 14px;
+  }
+  .proje-icerik a {
+    padding: 8px 16px;
+  }
+  .kucuk-resim {
+    width: 100%;
+    height: auto;
+  }
+}
+

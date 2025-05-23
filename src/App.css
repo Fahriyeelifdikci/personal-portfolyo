@@ -1,0 +1,156 @@
+/* Genel sıfırlama ve temel stiller */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+/* Ana container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Başlıklar */
+h1, h2, h3 {
+  color: #f0a500;
+  margin-bottom: 1rem;
+}
+
+/* Menü veya navigasyon (örnek) */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #222;
+  padding: 10px 0;
+  flex-wrap: wrap; /* Menü mobilde sarması için */
+  gap: 15px; /* Menü elemanları arası boşluk */
+}
+
+nav a {
+  color: #e0e0e0;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f0a500;
+}
+
+/* Bölümler arası boşluk */
+section {
+  margin-bottom: 50px;
+}
+
+/* Responsive Grid Örneği (Projelerim, Yetenekler gibi için) */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Kart stil örneği */
+.card {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px #f0a500;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* İletişim formu */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  resize: vertical;
+  background-color: #2c2c2c; /* koyu arka plan */
+  color: #e0e0e0; /* açık yazı */
+}
+
+input::placeholder, textarea::placeholder {
+  color: #bbb; /* placeholder rengi */
+}
+
+button {
+  background-color: #f0a500;
+  color: #121212;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c18c00;
+}
+
+/* Responsive Tasarım için Media Query'ler */
+
+/* Tablet ve altı */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobil */
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+
+  form {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+

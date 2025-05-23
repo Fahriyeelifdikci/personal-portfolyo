@@ -1,0 +1,24 @@
+.uygulama-linkleri {
+  background-color: #f1f2f6;
+  color: #2d3436;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 16px;
+  margin-top: 60px;
+  border-top: 1px solid #dfe6e9;
+}
+
+.ikonlar {
+  margin-top: 15px;
+}
+
+.ikonlar a {
+  color: #2d3436;
+  margin: 0 10px;
+  font-size: 22px;
+  transition: color 0.3s ease;
+}
+
+.ikonlar a:hover {
+  color: #00b894;
+}
