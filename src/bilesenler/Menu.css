@@ -6,30 +6,45 @@ html {
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: #d8cbb7; /* açık sıcak bej */
+  background-color: #d8cbb7;
   padding: 1rem 0;
-  z-index: 1000; /* yüksek z-index */
+  z-index: 1000;
   box-shadow: 0 2px 8px rgba(194, 152, 118, 0.3);
 }
 
 .menu ul {
-  max-width: 1200px; /* genişlik sınırı */
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   gap: 2rem;
   list-style: none;
-  padding: 0 20px; /* kenarlardan biraz boşluk */
+  padding: 0 20px;
 }
 
 .menu a {
-  color: #5a4a3f; /* koyu kahve */
+  color: #5a4a3f;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 .menu a:hover {
-  color: #c29876; /* açık kahve/nude hover */
+  color: #c29876;
 }
+
+/* Responsive: 768px altı için mobil menü */
+@media (max-width: 768px) {
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px;
+  }
+
+  .menu {
+    padding: 0.5rem;
+  }
+}
+
 
