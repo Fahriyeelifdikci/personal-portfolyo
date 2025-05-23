@@ -14,7 +14,7 @@ function Yetenekler() {
       <h2 className="yetenekler-baslik">Yeteneklerim</h2>
       <div className="yetenekler-kutular">
 
-        {/* C# */}
+  
         <div className="yetenekler-kutu">
           <div className="lottie-alani">
             <Lottie animationData={csharpanimasyon} loop={true} style={{ height: 100 }} />
@@ -25,7 +25,7 @@ function Yetenekler() {
           </p>
         </div>
 
-        {/* HTML & CSS */}
+    
         <div className="yetenekler-kutu">
           <div className="lottie-alani">
             <Lottie animationData={htmlanimasyon} loop={true} style={{ height: 100 }} />
@@ -36,7 +36,7 @@ function Yetenekler() {
           </p>
         </div>
 
-        {/* JavaScript */}
+     
         <div className="yetenekler-kutu">
           <div className="lottie-alani">
             <Lottie animationData={javaanimasyon} loop={true} style={{ height: 100 }} />
@@ -47,7 +47,7 @@ function Yetenekler() {
           </p>
         </div>
 
-        {/* Flutter */}
+
         <div className="yetenekler-kutu">
           <div className="lottie-alani">
             <Lottie animationData={flutteranimasyon} loop={true} style={{ height: 100 }} />
