@@ -42,8 +42,7 @@ function BenKimim() {
               Ayrıca, sosyal sorumluluk projelerine katılarak takım çalışması ve liderlik deneyimlerimi güçlendiriyorum.
           </p>
         </div>
-
-        {/* Programlama Dilleri */}
+        
          <div className="benkimim-kutu">
           <Lottie
               animationData={programanimasyonu}
@@ -56,7 +55,6 @@ function BenKimim() {
           </p>
         </div>
 
-        {/* Hedefler */}
        <div className="benkimim-kutu">
           <Lottie
             animationData={hedefanimasyonu}
