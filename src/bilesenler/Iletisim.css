@@ -18,7 +18,6 @@
   flex-wrap: wrap;
 }
 
-/* Flip Card */
 .flip-card {
   background-color: transparent;
   width: 300px;
@@ -68,7 +67,6 @@
   line-height: 1.6;
 }
 
-/* Form */
 .iletisim-formu {
   display: flex;
   flex-direction: column;
@@ -108,7 +106,6 @@
   background-color: #a87b58;
 }
 
-/* Responsive */
 @media (max-width: 992px) {
   .iletisim-container {
     flex-direction: column;
