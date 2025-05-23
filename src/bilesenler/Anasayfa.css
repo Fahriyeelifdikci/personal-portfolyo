@@ -3,10 +3,10 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Üst içerik ve alt yazı arasında boşluk */
-  padding-bottom: 60px; /* Alt yazı için alan */
-  background-color: #fff; /* Arka plan rengi eklenebilir */
-  color: #6e5841; /* Temel yazı rengi */
+  justify-content: space-between; 
+  padding-bottom: 60px; 
+  background-color: #fff; 
+  color: #6e5841; 
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -39,7 +39,7 @@
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-  flex-wrap: nowrap; /* Yan yana kalacak */
+  flex-wrap: nowrap; 
   gap: 40px;
   padding: 0 20px;
 }
@@ -161,7 +161,6 @@
   animation-delay: 1.4s;
 }
 
-/* Sosyal ikonlar */
 .ikonlar a {
   color: #c2855c;
   margin-right: 20px;
@@ -207,7 +206,6 @@
   }
 }
 
-/* Responsive */
 @media (max-width: 1024px) {
   .kapsayici-alan {
     gap: 30px;
